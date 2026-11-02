@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+coverage/
+.cache/
+.parcel-cache/
+
+# Environment and local configuration
+.env
+.env.*
+!.env.example
+*.local
+
+# Editor and IDE
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Operating system
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Hosting
+.netlify/
+.vercel/
+
+# Archives
+*.zip
+*.tar.gz

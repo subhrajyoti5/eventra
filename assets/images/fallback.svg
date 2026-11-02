@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Eventra placeholder">
+  <rect width="1200" height="900" fill="#efeae1"/>
+  <rect x="40" y="40" width="1120" height="820" fill="none" stroke="#d8d0c2" stroke-width="2"/>
+  <circle cx="600" cy="390" r="58" fill="#c8491b"/>
+  <path d="M585 365h34v10h-23v13h20v10h-20v15h23v10h-34z" fill="#f7f4ee"/>
+  <text x="600" y="520" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="58" fill="#171614" letter-spacing="2">EVENTRA</text>
+  <text x="600" y="558" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" letter-spacing="5" fill="#797369">DISCOVER EXPERIENCES</text>
+</svg>

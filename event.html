@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Experience — Eventra</title>
+  <meta name="description" content="An experience on the Eventra calendar. See the details, check availability, and register in a minute.">
+  <meta name="theme-color" content="#f7f4ee">
+  <meta property="og:title" content="Experience — Eventra">
+  <meta property="og:description" content="An experience on the Eventra calendar.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/event.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/theme-init.js"></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <noscript>
+    <div class="nojs-note">Eventra uses JavaScript to load event details and registration. Please enable it to continue.</div>
+  </noscript>
+
+  <header class="site-header" id="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="Eventra — home">
+        EVENTRA<span class="brand__dot" aria-hidden="true">.</span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary">
+        <a class="nav-link" href="index.html#discover">Discover</a>
+        <a class="nav-link" href="index.html#categories">Categories</a>
+        <a class="nav-link" href="index.html#about">About</a>
+      </nav>
+
+      <div class="header__actions">
+        <button type="button" class="icon-btn" data-search-jump aria-label="Search experiences" title="Search experiences">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5" stroke-linecap="round"/></svg>
+        </button>
+        <button type="button" class="icon-btn theme-toggle" data-theme-toggle aria-label="Switch to dark mode" title="Switch to dark mode">
+          <svg class="icon icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke-linecap="round"/></svg>
+          <svg class="icon icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><path d="M20 14.6A8.5 8.5 0 0 1 9.4 4a8.5 8.5 0 1 0 10.6 10.6Z" stroke-linejoin="round"/></svg>
+        </button>
+        <button type="button" class="btn btn-primary btn--sm header__cta" data-register>Register</button>
+        <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-nav" id="mobile-nav">
+      <nav class="mobile-nav__links" aria-label="Mobile">
+        <a class="mobile-nav__link" href="index.html#discover">
+          <span>Discover</span>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="mobile-nav__link" href="index.html#categories">
+          <span>Categories</span>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="mobile-nav__link" href="index.html#about">
+          <span>About</span>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </nav>
+      <div class="mobile-nav__footer">
+        <button type="button" class="btn btn-primary btn--block" data-register>Register for an event</button>
+        <p>Discover experiences.<br>Create memories.</p>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div id="event-view" hidden>
+      <section class="event-hero" aria-labelledby="event-title">
+        <div class="container">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Eventra</a>
+            <span aria-hidden="true">/</span>
+            <a href="index.html#discover">Discover</a>
+            <span aria-hidden="true">/</span>
+            <span id="event-breadcrumb-category">Category</span>
+            <span aria-hidden="true">/</span>
+            <span class="breadcrumb__current" id="event-breadcrumb-title" aria-current="page">Experience</span>
+          </nav>
+
+          <div class="event-hero__grid">
+            <div class="event-hero__content">
+              <div class="event-kicker reveal">
+                <span class="tag" id="event-category">Category</span>
+                <span class="event-kicker__season">Season 2026 / 27</span>
+              </div>
+              <h1 class="event-title reveal" id="event-title" style="--reveal-delay: 50ms">The experience.</h1>
+              <p class="event-lede reveal" id="event-excerpt" style="--reveal-delay: 100ms"></p>
+              <p class="event-host">Presented by <span id="event-host"></span></p>
+              <div class="event-hero__actions reveal" style="--reveal-delay: 150ms">
+                <button type="button" class="btn btn-primary event-register-trigger" id="event-register-hero" data-register>
+                  Register now
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <a class="link-underline" href="#registration-panel">Check availability</a>
+              </div>
+              <dl class="event-meta reveal" style="--reveal-delay: 200ms">
+                <div class="event-meta__item">
+                  <dt>Date</dt>
+                  <dd id="event-date"></dd>
+                </div>
+                <div class="event-meta__item">
+                  <dt>Time</dt>
+                  <dd id="event-time"></dd>
+                </div>
+                <div class="event-meta__item">
+                  <dt>Location</dt>
+                  <dd><span id="event-venue"></span>, <span id="event-city"></span></dd>
+                </div>
+              </dl>
+            </div>
+
+            <figure class="event-cover reveal" style="--reveal-delay: 100ms">
+              <img id="event-cover" alt="" width="1200" height="1500" decoding="async">
+              <figcaption id="event-cover-caption"></figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <div class="event-body">
+          <aside class="event-aside" aria-label="Registration details" id="registration-panel">
+            <div class="registration-card">
+              <div class="registration-card__top">
+                <p class="eyebrow">Registration</p>
+                <span class="status-badge" id="event-status">Registration open</span>
+              </div>
+
+              <div class="countdown-block" id="countdown-block">
+                <p class="countdown-label">Starts in</p>
+                <div class="countdown">
+                  <div class="countdown__unit">
+                    <span class="countdown__value" data-countdown="days">00</span>
+                    <span class="countdown__label">Days</span>
+                  </div>
+                  <div class="countdown__unit">
+                    <span class="countdown__value" data-countdown="hours">00</span>
+                    <span class="countdown__label">Hours</span>
+                  </div>
+                  <div class="countdown__unit">
+                    <span class="countdown__value" data-countdown="minutes">00</span>
+                    <span class="countdown__label">Mins</span>
+                  </div>
+                  <div class="countdown__unit">
+                    <span class="countdown__value" data-countdown="seconds">00</span>
+                    <span class="countdown__label">Secs</span>
+                  </div>
+                </div>
+              </div>
+              <p class="countdown-ended" id="countdown-ended" hidden></p>
+
+              <dl class="registration-meta">
+                <div><dt>Date</dt><dd id="event-aside-date"></dd></div>
+                <div><dt>Time</dt><dd id="event-aside-time"></dd></div>
+                <div><dt>Venue</dt><dd id="event-aside-venue"></dd></div>
+                <div><dt>Entry</dt><dd>Open RSVP</dd></div>
+              </dl>
+
+              <button type="button" class="btn btn-primary btn--block event-register-trigger" id="event-register" data-register>
+                Register now
+              </button>
+              <a class="btn btn-ghost btn--block" id="event-past-link" href="index.html#discover" hidden>Explore upcoming events</a>
+
+              <div class="registration-actions">
+                <button type="button" class="text-link" data-copy-link>Copy link</button>
+                <button type="button" class="text-link" id="calendar-button" data-add-calendar>Add to calendar</button>
+              </div>
+
+              <p class="registration-note">A demonstration registration. Your details stay in this browser; no payment or email is involved.</p>
+            </div>
+          </aside>
+
+          <article class="event-content">
+            <section class="detail-section" id="experience">
+              <p class="eyebrow">About</p>
+              <h2>The <em>experience.</em></h2>
+              <div class="prose" id="event-description"></div>
+            </section>
+
+            <section class="detail-section">
+              <p class="eyebrow">What to expect</p>
+              <h2>Come as you are.<br><em>Leave with more.</em></h2>
+              <ul class="expect-list" id="event-expect"></ul>
+            </section>
+
+            <section class="detail-section">
+              <p class="eyebrow">Highlights</p>
+              <h2>The shape of the day.</h2>
+              <ul class="highlight-list" id="event-highlights"></ul>
+            </section>
+
+            <section class="detail-section">
+              <p class="eyebrow">Venue</p>
+              <h2>Where it happens.</h2>
+              <div class="venue-card">
+                <div>
+                  <h3 id="event-venue-name"></h3>
+                  <address>
+                    <span id="event-address"></span><br>
+                    <span id="event-venue-city"></span>
+                  </address>
+                </div>
+                <a class="text-link" id="maps-link" href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">
+                  Open in maps
+                  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </div>
+            </section>
+          </article>
+        </div>
+      </div>
+
+      <section class="related" id="related-section" aria-labelledby="related-title">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Keep exploring</p>
+              <h2 id="related-title">More worth<br><em>showing up</em> for.</h2>
+            </div>
+            <a class="section-head__link" href="index.html#discover">
+              All experiences
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+          <div class="related-grid" id="related-grid"></div>
+        </div>
+      </section>
+    </div>
+
+    <section class="not-found" id="event-not-found" hidden>
+      <div class="container not-found__inner">
+        <p class="eyebrow">404 — Experience not found</p>
+        <h1>This experience isn't <br><em>on the calendar.</em></h1>
+        <p>The link may be incorrect, or the experience may no longer be listed. There is plenty else to discover.</p>
+        <a class="btn btn-primary" href="index.html#discover">
+          Explore upcoming events
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__top">
+      <div class="footer__brand">
+        <a class="brand" href="index.html" aria-label="Eventra — home">
+          EVENTRA<span class="brand__dot" aria-hidden="true">.</span>
+        </a>
+        <p class="footer__tagline">Discover experiences.<br>Create memories.</p>
+        <p class="footer__edition">Season 2026 / 27 · Nine cities<br>One considered calendar.</p>
+      </div>
+
+      <nav class="footer__col" aria-label="Explore">
+        <h3>Explore</h3>
+        <a class="footer__link" href="index.html#discover">Discover events</a>
+        <a class="footer__link" href="index.html#categories">Categories</a>
+        <a class="footer__link" href="index.html#about">Why Eventra</a>
+        <button class="footer__link" type="button" data-register>Register</button>
+      </nav>
+
+      <nav class="footer__col" aria-label="Company">
+        <h3>Company</h3>
+        <a class="footer__link" href="index.html#newsletter">Newsletter</a>
+        <a class="footer__link" href="mailto:hello@eventra.studio">Contact</a>
+        <a class="footer__link" href="README.md">Documentation</a>
+      </nav>
+
+      <div class="footer__col">
+        <h3>Follow</h3>
+        <a class="footer__link" href="https://www.instagram.com/subhrajyotisaho0/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a class="footer__link" href="https://x.com/subhra8640" target="_blank" rel="noopener noreferrer">X</a>
+        <a class="footer__link" href="https://www.linkedin.com/in/subhrajyoti-s-b047a227a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© <span data-year>2026</span> Eventra. All rights reserved.</p>
+      <p class="footer__disclaimer">A frontend demonstration. Registrations are stored locally in your browser.</p>
+      <a class="footer__top-link" href="#top">
+        Back to top
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <script defer src="js/events.js"></script>
+  <script defer src="js/utils.js"></script>
+  <script defer src="js/ui.js"></script>
+  <script defer src="js/theme.js"></script>
+  <script defer src="js/registration.js"></script>
+  <script defer src="js/event-details.js"></script>
+</body>
+</html>
