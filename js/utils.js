@@ -1,5 +1,5 @@
 /*
- * EVENTRA — shared utilities
+ * EVENTRA - shared utilities
  * Pure helpers for dates, escaping, querying, and small browser tasks.
  */
 (function () {

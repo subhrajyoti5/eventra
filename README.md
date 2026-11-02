@@ -38,9 +38,9 @@ Eventra is designed as a small, considered calendar rather than an endless feed.
 
 The experience covers three core journeys:
 
-1. **Discover** — browse featured experiences, scan the category index, or search and filter the full calendar.
-2. **Evaluate** — open an event page with the complete programme, venue details, countdown, and related experiences.
-3. **Register** — reserve a place through a focused modal, receive a local confirmation and reference ID, and add the event to a calendar.
+1. **Discover**: browse featured experiences, scan the category index, or search and filter the full calendar.
+2. **Evaluate**: open an event page with the complete programme, venue details, countdown, and related experiences.
+3. **Register**: reserve a place through a focused modal, receive a local confirmation and reference ID, and add the event to a calendar.
 
 The visual language is warm minimalism: an off-white canvas, charcoal type, a single burnt-orange accent, Instrument Serif display headings, Inter interface text, thin rules, two-pixel radii, and generous whitespace.
 

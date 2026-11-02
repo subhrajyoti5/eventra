@@ -1,5 +1,5 @@
 /*
- * EVENTRA — registration
+ * EVENTRA - registration
  * ------------------------------------------------------------------
  * A frontend-only registration experience. Entries are validated and
  * stored in localStorage so they survive refreshes. No data leaves the
@@ -70,7 +70,7 @@
   function eventOptionsMarkup() {
     return upcomingEvents().map(function (event) {
       return '<option value="' + utils.escapeHTML(event.id) + '">' +
-        utils.escapeHTML(event.title) + ' — ' + utils.escapeHTML(event.city) +
+        utils.escapeHTML(event.title) + ' in ' + utils.escapeHTML(event.city) +
         ' · ' + utils.escapeHTML(utils.formatCardDate(event)) +
         '</option>';
     }).join('');
@@ -186,7 +186,7 @@
                   '<button type="button" class="btn btn-primary" data-modal-close>Done</button>' +
                   '<button type="button" class="btn btn-ghost" data-add-calendar id="success-calendar">Add to calendar</button>' +
                 '</div>' +
-                '<p class="form-note">Remember: this is a frontend demonstration — no confirmation email will arrive.</p>' +
+                '<p class="form-note">Remember: this is a frontend demonstration. No confirmation email will arrive.</p>' +
               '</div>' +
             '</div>' +
           '</div>' +

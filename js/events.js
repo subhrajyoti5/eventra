@@ -1,5 +1,5 @@
 /*
- * EVENTRA — event dataset
+ * EVENTRA - event dataset
  * ------------------------------------------------------------------
  * All dates are stored as ISO 8601 strings with an explicit IST offset
  * (+05:30). Display formatting is handled in js/utils.js so this file can
@@ -36,7 +36,7 @@
       imageAlt: 'Attendees seated beneath a wide stage screen at a technology conference',
       excerpt: 'A full day with the builders shaping AI, climate tech, and the next wave of Indian products.',
       description: [
-        'Frontier Tech Summit brings together researchers, founders, and product teams for a day of clear-eyed conversation about what is actually being built — and what it will take to last.',
+        'Frontier Tech Summit brings together researchers, founders, and product teams for a day of clear-eyed conversation about what is actually being built, and what it will take to last.',
         'Expect three stages of talks and demos, practical office hours with senior operators, and enough unplanned time between sessions to meet the people doing the work. No pitch theatre, no buzzword bingo.'
       ],
       expect: [
@@ -87,7 +87,7 @@
       city: 'New Delhi',
       image: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=1600&q=80',
       imageAlt: 'Overhead view of paint, brushes, and design materials on a worktable',
-      excerpt: 'A one-day studio for people who make things — talks, critiques, and honest conversations about craft.',
+      excerpt: 'A one-day studio for people who make things: talks, critiques, and honest conversations about craft.',
       description: [
         'Design Notes is a different kind of design conference. Fewer slides, more work on the table. The day is built around studio critiques, candid project histories, and conversations that continue in the margins.',
         'Bring a notebook, a question, or a piece of work you are stuck on. The afternoon workshop stream is deliberately small so everyone leaves with something useful to take back to their practice.'
@@ -190,7 +190,7 @@
       excerpt: 'Educators, researchers, and students on what comes after the classroom.',
       description: [
         'This one-day symposium asks uncomfortable, practical questions about learning: what should be taught, what should be unlearned, and who gets to decide?',
-        'The programme mixes evidence-led talks with working sessions. Teachers, researchers, school leaders, and students share the same room — and the same problem statements — throughout the day.'
+        'The programme mixes evidence-led talks with working sessions. Teachers, researchers, school leaders, and students share the same room and the same problem statements throughout the day.'
       ],
       expect: [
         'Research-led talks on how people actually learn',
@@ -240,7 +240,7 @@
       excerpt: 'A small, unstructured meetup for designers, writers, and curious freelancers.',
       description: [
         'No name tags, no agenda, no thirty-second introductions. Coffee & Conversations is exactly what it sounds like: a table of interesting people and a couple of hours to talk.',
-        'We keep the group small so there is one table, not five. Come alone or bring a friend — both are normal here.'
+        'We keep the group small so there is one table, not five. Come alone or bring a friend. Both are normal here.'
       ],
       expect: [
         'A relaxed morning coffee in a small group',
@@ -287,7 +287,7 @@
       city: 'Chennai',
       image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=80',
       imageAlt: 'A team sketching and discussing ideas around a workshop table',
-      excerpt: 'A hands-on day for product designers — from messy problem to a tested prototype.',
+      excerpt: 'A hands-on day for product designers, from messy problem to a tested prototype.',
       description: [
         'Product Craft Lab is a working day, not a lecture series. Small teams take one real problem from a partner organisation and move through research, framing, sketching, and a quick prototype.',
         'There will be short inputs from practitioners along the way, but most of the day is spent making. You leave with a tested prototype, a clearer process, and a few new collaborators.'
@@ -315,7 +315,7 @@
       excerpt: "Watch twelve early-stage teams pitch what they've built in eight weeks.",
       description: [
         'Twelve teams. Eight weeks. One afternoon to show what survived contact with real users. Demo Day is the public close of the Startup Sprint programme, open to founders, operators, and the merely curious.',
-        'Each team gets six minutes on stage and ten minutes at their table. There is no winner and no trophy — just honest feedback, useful introductions, and a room full of people building things.'
+        'Each team gets six minutes on stage and ten minutes at their table. There is no winner and no trophy, just honest feedback, useful introductions, and a room full of people building things.'
       ],
       expect: [
         'Twelve six-minute demos from early-stage teams',

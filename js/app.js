@@ -1,5 +1,5 @@
 /*
- * EVENTRA — homepage
+ * EVENTRA - homepage
  * Renders featured content, the event discovery grid, search, filters,
  * and the newsletter form.
  */

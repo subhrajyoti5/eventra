@@ -1,5 +1,5 @@
 /* ==========================================================================
-   EVENTRA — responsive composition
+   EVENTRA - responsive composition
    Mobile 320–480 · Tablet 481–1024 · Desktop 1025+
    ========================================================================== */
 
@@ -25,7 +25,7 @@
 }
 
 /* --------------------------------------------------------------------------
-   Tablet landscape and below — navigation collapses, hero stacks
+   Tablet landscape and below: navigation collapses, hero stacks
    -------------------------------------------------------------------------- */
 @media (max-width: 1023px) {
   .header__inner {

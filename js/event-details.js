@@ -1,5 +1,5 @@
 /*
- * EVENTRA — event details page
+ * EVENTRA - event details page
  * Loads an event from the shared dataset using ?id=, populates the page,
  * drives the countdown, and renders related experiences.
  */
@@ -130,13 +130,13 @@
   }
 
   function updateMeta(event) {
-    document.title = event.title + ' — Eventra';
+    document.title = event.title + ' | Eventra';
 
     const description = document.querySelector('meta[name="description"]');
     if (description) description.setAttribute('content', event.excerpt);
 
     const ogTitle = document.querySelector('meta[property="og:title"]');
-    if (ogTitle) ogTitle.setAttribute('content', event.title + ' — Eventra');
+    if (ogTitle) ogTitle.setAttribute('content', event.title + ' | Eventra');
 
     const ogDescription = document.querySelector('meta[property="og:description"]');
     if (ogDescription) ogDescription.setAttribute('content', event.excerpt);
@@ -238,7 +238,7 @@
     const notFound = document.getElementById('event-not-found');
     if (view) view.hidden = true;
     if (notFound) notFound.hidden = false;
-    document.title = 'Experience not found — Eventra';
+    document.title = 'Experience not found | Eventra';
     const description = document.querySelector('meta[name="description"]');
     if (description) {
       description.setAttribute('content', 'This experience could not be found in the Eventra calendar.');

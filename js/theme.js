@@ -1,5 +1,5 @@
 /*
- * EVENTRA — light / dark theme
+ * EVENTRA - light / dark theme
  * The selected theme is persisted in local storage and synced across tabs.
  */
 (function () {

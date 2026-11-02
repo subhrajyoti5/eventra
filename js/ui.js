@@ -1,5 +1,5 @@
 /*
- * EVENTRA — shared interface behaviour and markup builders
+ * EVENTRA - shared interface behaviour and markup builders
  */
 (function () {
   'use strict';
@@ -158,7 +158,7 @@
       });
     }
 
-    /* Search shortcut — focus the discovery search field on this page,
+    /* Search shortcut: focus the discovery search field on this page,
        or return to the homepage search when on an event page. */
     utils.qsa('[data-search-jump]').forEach(function (button) {
       button.addEventListener('click', function () {
