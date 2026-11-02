@@ -47,6 +47,47 @@ No frameworks, no npm packages, no bundlers. Just clean semantic markup, custom 
 
 ---
 
+## Screenshots
+
+### Discovery and event pages
+
+<p align="center">
+  <a href="docs/screenshots/home.png"><img src="docs/screenshots/home.png" alt="Eventra homepage with editorial typography, featured event photography, and live season statistics" width="49%" /></a>
+  <a href="docs/screenshots/featured.png"><img src="docs/screenshots/featured.png" alt="Eventra featured experiences section with one lead story and two compact event cards" width="49%" /></a>
+</p>
+<p align="center"><sub><b>Homepage</b> with live season counts and featured photography. <b>Featured section</b> with editorial event cards.</sub></p>
+
+<p align="center">
+  <a href="docs/screenshots/event-detail.png"><img src="docs/screenshots/event-detail.png" alt="Event detail page for After Hours Festival with countdown, venue details, and registration section" width="100%" /></a>
+</p>
+<p align="center"><sub><b>Event detail</b> with live countdown, venue information, programme notes, and registration entry point.</sub></p>
+
+The complete page layout is available in the [full homepage capture](docs/screenshots/home-full.png).
+
+### Registration flow
+
+<p align="center">
+  <a href="docs/screenshots/registration-modal.png"><img src="docs/screenshots/registration-modal.png" alt="Eventra registration dialog with event summary, attendee fields, and validation" width="49%" /></a>
+  <a href="docs/screenshots/registration-success.png"><img src="docs/screenshots/registration-success.png" alt="Eventra registration confirmation with attendee details and reference code" width="49%" /></a>
+</p>
+<p align="center"><sub><b>Registration dialog</b> with event context and field validation. <b>Confirmation</b> with booking reference and calendar export.</sub></p>
+
+### Theme and responsive layout
+
+<p align="center">
+  <a href="docs/screenshots/home-dark.png"><img src="docs/screenshots/home-dark.png" alt="Eventra homepage in the dark theme" width="100%" /></a>
+</p>
+<p align="center"><sub><b>Dark theme</b> applied before first paint and persisted across visits.</sub></p>
+
+<p align="center">
+  <a href="docs/screenshots/home-mobile.png"><img src="docs/screenshots/home-mobile.png" alt="Eventra homepage on a 390 pixel mobile viewport" width="28%" /></a>
+  <a href="docs/screenshots/mobile-nav.png"><img src="docs/screenshots/mobile-nav.png" alt="Eventra mobile navigation panel" width="28%" /></a>
+  <a href="docs/screenshots/event-mobile.png"><img src="docs/screenshots/event-mobile.png" alt="Eventra event detail page on a mobile viewport" width="28%" /></a>
+</p>
+<p align="center"><sub><b>Mobile homepage</b>, <b>navigation</b>, and <b>event detail</b> at 390 pixels.</sub></p>
+
+---
+
 ## Tech Stack
 
 **Core Architecture**<br/>
