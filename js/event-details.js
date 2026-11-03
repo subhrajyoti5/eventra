@@ -130,6 +130,8 @@
   }
 
   function updateMeta(event) {
+    if (!event) return;
+    
     document.title = event.title + ' | Eventra';
 
     // Update description meta tag
@@ -145,7 +147,7 @@
 
     // Update OG image
     const ogImage = document.querySelector('meta[property="og:image"]');
-    if (ogImage) ogImage.setAttribute('content', event.image);
+    if (ogImage && event.image) ogImage.setAttribute('content', event.image);
 
     const ogImageAlt = document.querySelector('meta[property="og:image:alt"]');
     if (ogImageAlt) ogImageAlt.setAttribute('content', event.title);
@@ -156,7 +158,7 @@
 
     // Update Twitter Card tags
     const twitterImage = document.querySelector('meta[name="twitter:image"]');
-    if (twitterImage) twitterImage.setAttribute('content', event.image);
+    if (twitterImage && event.image) twitterImage.setAttribute('content', event.image);
 
     const twitterTitle = document.querySelector('meta[name="twitter:title"]');
     if (twitterTitle) twitterTitle.setAttribute('content', event.title + ' | Eventra');
