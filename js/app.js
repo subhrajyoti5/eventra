@@ -314,6 +314,26 @@
     initDiscovery();
     initNewsletter();
     ui.observeReveals();
+    
+    // Add Organization schema to homepage
+    const organizationSchema = {
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      name: 'Eventra',
+      url: window.location.origin,
+      logo: window.location.origin + '/assets/favicon.svg',
+      description: 'Eventra is a curated calendar of technology, design, music, business, and cultural experiences across India.',
+      sameAs: [
+        'https://www.instagram.com/subhrajyotisaho0/',
+        'https://x.com/subhra8640',
+        'https://www.linkedin.com/in/subhrajyoti-s-b047a227a/'
+      ]
+    };
+    
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.textContent = JSON.stringify(organizationSchema);
+    document.head.appendChild(script);
   }
 
   if (document.readyState === 'loading') {
